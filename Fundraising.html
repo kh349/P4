@@ -1,0 +1,160 @@
+<!-- DEVELOPER: Kathy Huang, IS117-xxx, Spring 2020 -->
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fundraising</title>
+    <link rel="shortcut icon" href="images/icon.png">
+
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<div class="container-fluid topnav">
+    <div class="row ">
+        <nav class="navbar justify-content-start
+                    navbar-expand-md
+                    col-12 navbar-fixed-top">
+
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">Logo</a>
+            <!-- Responsive Button for the smaller menu -->
+            <button class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                           data-toggle="dropdown">
+                            Projects To Do!
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="Projects.html">Beginner</a>
+                            <a class="dropdown-item" href="blank.html">Intermediate</a>
+                            <a class="dropdown-item" href="blank.html">Advanced</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                           data-toggle="dropdown">
+                            Featured
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="Fundraising.html">Donations</a>
+                            <a class="dropdown-item" href="blank.html">Names to Mention</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                           data-toggle="dropdown">
+                            Help
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="blank.html">Starters Guide</a>
+                            <a class="dropdown-item" href="blank.html">Informtion</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                           data-toggle="dropdown">
+                            History
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="blank.html">News</a>
+                            <a class="dropdown-item" href="Featured.html">Featured</a>
+                            <!--so umm there was already a featured and based on the outline on P2 I had another featured here but I opted to just change it to form-->
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <form class="form-inline" >
+                <input class="form-control mr-sm-2" type="search" placeholder="Looking for Something?" aria-label="Search">
+                <button type="submit">Search</button>
+            </form>
+        </nav>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+        <section2 float = "left">
+            <div class="card">
+                <img class="card-img-top" src="images/emailsentpic.jpg" >
+
+                <div class="card-body" >
+                    <h1 class="card-title">
+                    Join Us!
+                    </h1>
+                </div>
+            </div>
+
+        </section2 >
+        <section2 float = "middle">
+            <div class="card" >
+
+                <div class="card-body"  >
+                    <h1 class="card-title">
+                        Would You Like To Join Our Email List?
+                    </h1>
+                    <form>
+                        <div class="form-group"><br>
+                            <label for="name">Name:</label><br>
+                            <input type="name" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+
+                        <div class="form-group"><br>
+                            <label for="email">Email:</label><br>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email"><br>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section2>
+        <section2 float = "right">
+            <div class="card" >
+                <div class="card-body" >
+                    <h1 class="card-title">
+                        While we don't have the need for donations you are welcome to join our email list for new updates in the future:
+                    </h1>
+                    <p class="card-text"> <h2>Our goal is a non-profit website
+                    that everyone can use while ads that are moderated can filter
+                    through and suggest places that supplies can be purchased. <br>Ideally,
+                    we hope to create a site can be supported by its community and the current
+                    system of ads, but at a more controlled rate where the annoyance of ads or useless DIYs are deleted.
+                    Visitors can subscribe to certain blogs and donate if they wish to the site as a whole or to a certain user.
+                    If there are extra income from donations and ads, we could form a community vote to a charity to donate the extra income or save it
+                    for when we need money depending on the amount and the cost of site maintenance from mods. As for mods themselves, they will be vetted by other
+                    pre-established mods and given a pay if they wish depending on the work they do.</h2>
+                </div>
+            </div>
+        </section2>
+</body>
+
+<footer class="footer"> <p>Kathy Huang, IS117, Spring 2020</p></footer>
+</html>
+
+
+</body>
+</html>
