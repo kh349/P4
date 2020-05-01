@@ -1,1 +1,200 @@
-<!DOCTYPE html><html lang="en" xmlns="http://www.w3.org/1999/html"><meta name="viewport" content="width=device-width, initial-scale=1"><head>    <meta charset="UTF-8">    <title>PinIt index</title>    <link rel="shortcut icon" href="images/icon.png">    <link rel="stylesheet"          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"          crossorigin="anonymous">    <link rel="stylesheet" href="css/main.css">    <link rel="stylesheet" href="styles/slideshow.css"></head><!-- Latest compiled and minified CSS --><body><div class="container-fluid topnav">    <div class="row ">        <nav class="navbar justify-content-start                    navbar-expand-md                    col-12 navbar-fixed-top">            <!-- Brand -->            <a class="navbar-brand" href="index.html">Logo</a>            <!-- Responsive Button for the smaller menu -->            <button class="navbar-toggler" type="button"                    data-toggle="collapse" data-target="#collapsibleNavbar">                <span class="navbar-toggler-icon"></span>            </button>            <div class="collapse navbar-collapse" id="collapsibleNavbar">                <ul class="navbar-nav">                    <!-- Dropdown -->                    <li class="nav-item dropdown">                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"                           data-toggle="dropdown">                            Projects To Do!                        </a>                        <div class="dropdown-menu">                            <a class="dropdown-item" href="Projects.html">Beginner</a>                            <a class="dropdown-item" href="blank.html">Intermediate</a>                            <a class="dropdown-item" href="blank.html">Advanced</a>                        </div>                    </li>                    <li class="nav-item dropdown">                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"                           data-toggle="dropdown">                            Featured                        </a>                        <div class="dropdown-menu">                            <a class="dropdown-item" href="Fundraising.html">Donations</a>                            <a class="dropdown-item" href="blank.html">Names to Mention</a>                        </div>                    </li>                    <li class="nav-item dropdown">                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop"                       data-toggle="dropdown">                        Help                    </a>                    <div class="dropdown-menu">                        <a class="dropdown-item" href="blank.html">Starters Guide</a>                        <a class="dropdown-item" href="blank.html">Informtion</a>                    </div>                </li>                    <li class="nav-item dropdown">                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop"                       data-toggle="dropdown">                       History                    </a>                    <div class="dropdown-menu">                        <a class="dropdown-item" href="blank.html">News</a>                        <a class="dropdown-item" href="Featured.html">Featured</a>                        <!--so umm there was already a featured and based on the outline on P2 I had another featured here but I opted to just change it to form-->                    </div>                </li>                </ul>            </div>            <form class="form-inline" >                <input class="form-control mr-sm-2" type="search" placeholder="Looking for Something?" aria-label="Search">                <button type="submit">Search</button>            </form>        </nav>    </div></div>    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"            crossorigin="anonymous"></script>    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"            crossorigin="anonymous"></script>    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"            crossorigin="anonymous"></script><section><div class="slideshow-container">    <div class="mySlides ">        <div class="numbertext">1 / 5</div>        <img src="images/funding.png" style="width:75%">        <div class="text">Funding </div>    </div>    <div class="mySlides ">        <div class="numbertext">2 / 5</div>        <img src="images/kniting.jpg" style="width:75%">        <div class="text">Knitting Two</div>    </div>    <div class="mySlides ">        <div class="numbertext">3 / 5</div>        <img src="images/Cooking.jpg" style="width:75%">        <div class="text">Featured of the Week</div>    </div>    <div class="mySlides ">        <div class="numbertext">4 / 5</div>        <img src="images/historyimage.png" style="width:75%">        <div class="text">History</div>    </div>    <div class="mySlides ">        <div class="numbertext">5 / 5</div>        <img src="images/help.jpg" style="width:75%">        <div class="text">Need Help?</div>    </div>    <!-- Next and previous buttons -->    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>    <a class="next" onclick="plusSlides(1)">&#10095;</a></div>    <br><div style="text-align:center">    <span class="dot" onclick="currentSlide(1)"></span>    <span class="dot" onclick="currentSlide(2)"></span>    <span class="dot" onclick="currentSlide(3)"></span>    <span class="dot" onclick="currentSlide(4)"></span>    <span class="dot" onclick="currentSlide(5)"></span></div></section><script>var slideIndex = 1;showSlides(slideIndex);function plusSlides(n) {    showSlides(slideIndex += n);}function currentSlide(n) {    showSlides(slideIndex = n);}function showSlides(n) {    var i;    var slides = document.getElementsByClassName("mySlides");    var dots = document.getElementsByClassName("dot");    if (n > slides.length) {slideIndex = 1}    if (n < 1) {slideIndex = slides.length}    for (i = 0; i < slides.length; i++) {    slides[i].style.display = "none";    }    for (i = 0; i < dots.length; i++) {    dots[i].className = dots[i].className.replace(" active", "");    }    slides[slideIndex-1].style.display = "block";    dots[slideIndex-1].className += " active";    }</script><aside>        <div class="card">            <img class="card-img-top" src="images/boringnormal.jpg">        <div class="card-body">            <h1 class="card-title">                The Quote of the Day!</h1>            <p class="card-text">               <h2> <br>"Imperfection is beauty, Madness is genius, and it's better to be absolutely ridiculous than absolutely boring"<br>            - Marilyn Monroe</h2>        </div>        </div></aside><blockquote>    Our goal is to make a community of crafters to share tips and helpful links(connections) to other services that potential DIYs’ would want.Pinterest offers seemingly possible DIY’s while their links and or sources are usuallyan ad to draw in customers to clicking a site. While blogs are tedious to filter through to find a weekendjob that anyone can do. To do this we hope to create a tag system that can help potential DIYers’ to find a fun hobby,    new skill or weekend job, as well as, a team of moderators to make sure the site is free from spam or disguised ads.</blockquote></body><footer class="footer"> <p>Kathy Huang, IS117, Spring 2020</p></footer></html>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PinIt index</title>
+    <link rel="shortcut icon" href="images/icon.png">
+
+
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="styles/slideshow.css">
+</head>
+<!-- Latest compiled and minified CSS -->
+
+<body>
+<div class="container-fluid topnav">
+    <div class="row ">
+        <nav class="navbar justify-content-start
+                    navbar-expand-md
+                    col-12 navbar-fixed-top">
+
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">Logo</a>
+            <!-- Responsive Button for the smaller menu -->
+            <button class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                           data-toggle="dropdown">
+                            Projects To Do!
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="Projects.html">Beginner</a>
+                            <a class="dropdown-item" href="blank.html">Intermediate</a>
+                            <a class="dropdown-item" href="blank.html">Advanced</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                           data-toggle="dropdown">
+                            Featured
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="Fundraising.html">Donations</a>
+                            <a class="dropdown-item" href="blank.html">Names to Mention</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                       data-toggle="dropdown">
+                        Help
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="blank.html">Starters Guide</a>
+                        <a class="dropdown-item" href="blank.html">Informtion</a>
+                    </div>
+                </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                       data-toggle="dropdown">
+                       History
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="blank.html">News</a>
+                        <a class="dropdown-item" href="Featured.html">Featured</a>
+                        <!--so umm there was already a featured and based on the outline on P2 I had another featured here but I opted to just change it to form-->
+                    </div>
+                </li>
+
+
+                </ul>
+            </div>
+
+            <form class="form-inline" >
+                <input class="form-control mr-sm-2" type="search" placeholder="Looking for Something?" aria-label="Search">
+                <button type="submit">Search</button>
+            </form>
+        </nav>
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+<section>
+    <div class="slideshow-container">
+        <div class="mySlides ">
+            <div class="numbertext">1 / 5</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="images/funding.png" style="width:75%">
+            <div class="text">Funding </div>
+        </div>
+
+        <div class="mySlides ">
+            <div class="numbertext">2 / 5</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="images/kniting.jpg" style="width:75%">
+            <div class="text">Knitting Two</div>
+        </div>
+
+        <div class="mySlides ">
+            <div class="numbertext">3 / 5</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="images/Cooking.jpg" style="width:75%">
+            <div class="text">Featured of the Week</div>
+        </div>
+
+        <div class="mySlides ">
+            <div class="numbertext">4 / 5</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="images/historyimage.png" style="width:75%">
+
+            <div class="text">History</div>
+        </div>
+
+        <div class="mySlides ">
+            <div class="numbertext">5 / 5</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="images/help.jpg" style="width:75%">
+            <div class="text">Need Help?</div>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+
+    </div>
+</section>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    }
+</script>
+<aside>
+        <div class="card">
+            <img class="card-img-top" src="images/boringnormal.jpg">
+        <div class="card-body">
+            <h1 class="card-title">
+                The Quote of the Day!</h1>
+            <p class="card-text">
+               <h2> <br>"Imperfection is beauty, Madness is genius, and it's better to be absolutely ridiculous than absolutely boring"<br>
+            - Marilyn Monroe</h2>
+        </div>
+        </div>
+</aside>
+
+<blockquote>
+    Our goal is to make a community of crafters to share tips and helpful links(connections) to other services that potential DIYs’ would want.
+Pinterest offers seemingly possible DIY’s while their links and or sources are usually
+an ad to draw in customers to clicking a site. While blogs are tedious to filter through to find a weekend
+job that anyone can do. To do this we hope to create a tag system that can help potential DIYers’ to find a fun hobby,
+    new skill or weekend job, as well as, a team of moderators to make sure the site is free from spam or disguised ads.</blockquote>
+</body>
+
+
+<footer class="footer"> <p>Kathy Huang, IS117, Spring 2020</p></footer>
+</html>
